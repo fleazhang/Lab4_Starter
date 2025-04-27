@@ -31,6 +31,9 @@ function discountPrices(prices, discount) {
     if(Array.isArray(prices) === false || typeof discount !== 'number') {
         return false;
     }
+    if(prices.length === 0) {
+        return false;
+    }
 
     for(let i = 0; i < length; i++) {
         let discountedPrice = 0
